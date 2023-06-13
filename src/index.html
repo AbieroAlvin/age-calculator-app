@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-[var(--clr-Off-white)] grid place-content-center h-screen">
+    <div class="bg-white p-8 rounded-br-[10rem] mb-5 rounded-md md:mx-auto">
+      <div
+        id="inputs"
+        class="border-b-2 border-b-[var(--clr-Smokey-grey)] md:py-8 pb-10 z-10"
+      >
+        <form class="md:flex flex" id="form">
+          <div class="flex flex-col mx-3" id="input-control">
+            <label class="text-[10px] font-semibold py-1 px-1" for="Day"
+              >DAY</label
+            >
+            <input
+              class="border-[var( --clr-Light-grey)] border-2 bg-[var(--clr-White)] w-[100px] h-[40px] rounded-md outline-none hover:outline-[var(--clr-Purple)] cursor-pointer placeholder:px-3 font-bold active:outline-[var(--clr-Purple)] caret-[var(--clr-Purple)]"
+              type="text"
+              placeholder="DD"
+              name="Day"
+              id="Day"
+            />
+            <div
+              class="error text-[8px] text-[var(--clr-Light-red)] mt-1"
+            ></div>
+          </div>
+          <div class="flex flex-col mx-3" id="input-control">
+            <label class="text-[10px] font-semibold py-1 px-1" for="Month"
+              >MONTH</label
+            >
+            <input
+              class="border-[var( --clr-Light-grey)] border-2 bg-[var(--clr-White)] w-[100px] h-[40px] rounded-md outline-none hover:outline-[var(--clr-Purple)] cursor-pointer placeholder:px-3 font-bold active:outline-[var(--clr-Purple)] caret-[var(--clr-Purple)]"
+              type="text"
+              placeholder="MM"
+              name="Month"
+              id="Month"
+            />
+            <div
+              class="error text-[8px] text-[var(--clr-Light-red)] mt-1"
+            ></div>
+          </div>
+          <div class="flex flex-col mx-3" id="input-control">
+            <label class="text-[10px] font-semibold py-1 px-1" for="Year"
+              >YEAR</label
+            >
+            <input
+              class="border-[var( --clr-Light-grey)] border-2 bg-[var(--clr-White)] w-[100px] h-[40px] rounded-md outline-none hover:outline-[var(--clr-Purple)] cursor-pointer placeholder:px-3 font-bold active:outline-[var(--clr-Purple)] caret-[var(--clr-Purple)]"
+              type="text"
+              placeholder="YYYY"
+              name="Year"
+              id="Year"
+            />
+            <div
+              class="error text-[8px] text-[var(--clr-Light-red)] mt-1"
+            ></div>
+          </div>
+          <button
+            class="bg-[var(--clr-Purple)] rounded-full px-3 z-50 md:translate-y-[3.65rem] translate-y-[4.35rem] md:translate-x-[1rem] translate-x-[-13rem] hover:bg-[var(--clr-Off-black)]"
+            type="submit"
+            ><img src="./assets/images/icon-arrow.svg" alt=""
+          /></button>
+        </form>
+      </div>
+      <div
+        id="result"
+        class="px-6 md:text-7xl text-6xl italic py-6 font-extrabold"
+      >
+        <div
+          ><span class="text-[var(--clr-Purple)] mx-2 dash-year">--</span
+          >years</div
+        >
+        <div
+          ><span class="text-[var(--clr-Purple)] mx-2 dash-month">--</span
+          >months</div
+        >
+        <div
+          ><span class="text-[var(--clr-Purple)] mx-2 dash-day">--</span
+          >days</div
+        >
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abiero Alvin</a>.
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

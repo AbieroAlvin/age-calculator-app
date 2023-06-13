@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --clr-Purple: hsl(259, 100%, 65%);
+    --clr-Light-red: hsl(0, 100%, 67%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Off-white: hsl(0, 0%, 94%);
+    --clr-Light-grey: hsl(0, 0%, 86%);
+    --clr-Smokey-grey: hsl(0, 1%, 44%);
+    --clr-Off-black: hsl(0, 0%, 8%);
+  }
+
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
+  label {
+    font-family: "Poppins", sans-serif;
+    color: var(--clr-Smokey-grey);
+  }
+
+  #input-control.error input {
+    @apply border-[var(--clr-Light-red)];
+  }
+
+  #input-control.error label {
+    @apply text-[var(--clr-Light-red)];
+  }
+}
+
+/* - Font size (inputs): 32px */
